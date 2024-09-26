@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body{
+    background-color: bisque;
+}
+
+.container1{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    
+}
+
+.container2{
+    border: 3px solid gray;
+    height:80vh;
+    width:80vh;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color:antiquewhite;
+    color:white;
+    background-image: url(spidey.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+h2{
+    text-align: center;
+   
+}
+
+i{
+    font-size: 80px;
+    color:white;
+    align-self: center;
+    padding-top: 300px;
+    cursor: pointer;
+}
+
+.music{
+    height: 90px;
+    width: 90px;
+
+}
+#play,#pause{
+    display:none;
+   
+   
+}
+#play.show, #pause.show {
+    display: inline-block;
+}
+
+#gif1.display{
+display: none;
+}
+#gif1{
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    bottom: 100px;
+}
+
+input{
+    cursor: pointer;
+}
+
+#range2{
+    display:none;
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        width: 90vh; /* Adjust width for mobile */
+        padding: 10px; /* Adjust padding */
+    }
+
+    i {
+        font-size: 60px; /* Reduce icon size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 {
+        width: 95%; /* Full width on very small screens */
+    }
+
+    i {
+        font-size: 50px; /* Further reduce icon size */
+    }
+
+    .Range, .Volume {
+        width: 90%; /* Slightly wider sliders */
+    }
+}
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 60px; /* Adjust font size for titles */
+    }
+
+    h2 {
+        font-size: 60px; /* Adjust font size for subtitles */
+    }
+
+    /* Further adjust button sizes and margins */
+    i {
+        font-size: 150px; /* Adjust icon sizes for portrait mode */
+        margin: 10px; /* Less margin in portrait mode */
+        position: relative;
+        top: 200px;
+    }
+
+    /* If necessary, adjust GIF and input field sizes */
+    .music {
+        height: 70px;
+        width: 70px;
+    }
+
+    /* Ensure the container can scroll if it gets too tall */
+    .container2 {
+        overflow-y: auto; /* Enable scrolling if content exceeds viewport */
+        max-height: 100vh; /* Limit max height */
+    }
+
+    .Range{
+        position: relative;
+        top:300px;
+    }
+
+    
+}
